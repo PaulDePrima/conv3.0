@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% set active_page ="thi" %}
+{% block title %}Celsius to Kelvin{% endblock %}
+{% block content %}
+
+
+<form action='/responsethree'>
+      <br>Convert Celsius to Kelvin</br>
+      <input type="text" name="miles">
+      <br><br>
+      <input type="submit">
+    </form>
+
+<h1> {{ their }} Celsius in Kelvin is: {{ response }}</h1>
+
+{% endblock %}
