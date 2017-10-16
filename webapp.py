@@ -33,9 +33,9 @@ def render_responsetwo():
         return render_template('responsetwo.html', their = request.args['cel'], response = res)
 @app.route("/responsethree")
 def render_responsethree():
-        ins = float(request.args['miles'])
+        ins = float(request.args['kev'])
         #The request object stores information that was sent by the client to the server.
         #the args is a multidict
         #the way we get info from args is that it is visible in a url. - the information in args is visible in the url for hte page being requested(ex. .../response?color=blue)
         res = str(ins+273.15)
-        return render_template('responsethree.html', their = request.args['miles'], response = res)
+        return render_template('responsethree.html', their = request.args['kev'], response = res)
