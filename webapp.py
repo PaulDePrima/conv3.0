@@ -17,12 +17,12 @@ def render_page3():
 
 @app.route("/response")
 def render_response():
-        ins = float(request.args['inches'])
+        ins = float(request.args['far'])
         #The request object stores information that was sent by the client to the server.
         #the args is a multidict
         #the way we get info from args is that it is visible in a url. - the information in args is visible in the url for hte page being requested(ex. .../response?color=blue)
         res = str((ins-32)*5/9)
-        return render_template('response.html', their = request.args['inches'], response = res)
+        return render_template('response.html', their = request.args['far'], response = res)
 @app.route("/responsetwo")
 def render_responsetwo():
         ins = float(request.args['inches'])
